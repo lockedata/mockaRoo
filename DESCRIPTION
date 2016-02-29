@@ -1,8 +1,18 @@
 Package: mockaRoo
-Title: What the Package Does (one line, title case)
+Title: Generate mock data with the Mockaroo API
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(person("Steph", "Locke"
+             , email = "stephanie.g.locke@gmail.com"
+             , role = c("aut", "cre"))
+             ,person("Mockaroo, LLC"
+             , email = "mockaroo.com@gmail.com"
+             , role = c("aut")
+             , comment="Mockaroo.com"
+             ))
+Description: Allows the generation of mock or test data via
+             API calls to Mockaroo.com
 Depends: R (>= 3.2.3)
-License: What license is it under?
+License: MIT + file LICENSE
 LazyData: true
+Imports: httr,
+    jsonlite
