@@ -10,9 +10,16 @@ Authors@R: c(person("Steph", "Locke"
              , comment="Mockaroo.com"
              ))
 Description: Allows the generation of mock or test data via
-             API calls to Mockaroo.com
-Depends: R (>= 3.2.3)
+    API calls to Mockaroo.com
+Depends:
+    R (>= 3.2.3)
 License: MIT + file LICENSE
 LazyData: true
-Imports: httr,
+Imports:
+    httr,
     jsonlite
+URL: https://github.com/stephlocke/mockaRoo
+BugReports: https://github.com/stephlocke/mockaRoo/issues
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
