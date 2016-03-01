@@ -5,4 +5,5 @@
 #'
 #' @name mockaRoo
 #' @docType package
+#' @importFrom httr POST content
 NULL
