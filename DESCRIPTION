@@ -9,8 +9,7 @@ Authors@R: c(person("Steph", "Locke"
              , role = c("aut")
              , comment="Mockaroo.com"
              ))
-Description: Allows the generation of mock or test data via
-    API calls to Mockaroo.com
+Description: Perform API calls to Mockaroo.com in order to generate mock data.
 Depends:
     R (>= 3.2.3)
 License: MIT + file LICENSE
