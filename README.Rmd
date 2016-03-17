@@ -29,9 +29,11 @@ name = "blah"
 , type = "Color"
 )
 
-mockaroo("json"
+response<-mockaroo("json"
  , list( key = "48b71860"
         , count = 10)
  , schema = jsonlite::toJSON(basicSchema)
 )
+
+jsonlite::prettify(response)
 ```

@@ -12,6 +12,40 @@ library(mockaRoo)
 
 basicSchema <- data.frame(name = "blah", percentBlank = 0, type = "Color")
 
-mockaroo("json", list(key = "48b71860", count = 10), schema = jsonlite::toJSON(basicSchema))
-#> [1] "[{\"blah\":\"Crimson\"},{\"blah\":\"Crimson\"},{\"blah\":\"Crimson\"},{\"blah\":\"Puce\"},{\"blah\":\"Orange\"},{\"blah\":\"Yellow\"},{\"blah\":\"Blue\"},{\"blah\":\"Red\"},{\"blah\":\"Pink\"},{\"blah\":\"Turquoise\"}]"
+response <- mockaroo("json", list(key = "48b71860", count = 10), schema = jsonlite::toJSON(basicSchema))
+
+jsonlite::prettify(response)
+#> [
+#>     {
+#>         "blah": "Red"
+#>     },
+#>     {
+#>         "blah": "Green"
+#>     },
+#>     {
+#>         "blah": "Goldenrod"
+#>     },
+#>     {
+#>         "blah": "Blue"
+#>     },
+#>     {
+#>         "blah": "Blue"
+#>     },
+#>     {
+#>         "blah": "Indigo"
+#>     },
+#>     {
+#>         "blah": "Purple"
+#>     },
+#>     {
+#>         "blah": "Turquoise"
+#>     },
+#>     {
+#>         "blah": "Puce"
+#>     },
+#>     {
+#>         "blah": "Turquoise"
+#>     }
+#> ]
+#> 
 ```
