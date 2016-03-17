@@ -2,12 +2,16 @@
 mockaRoo
 ========
 
-[![Travis-CI Build Status](https://travis-ci.org/stephlocke/mockaRoo.svg?branch=master)](https://travis-ci.org/stephlocke/mockaRoo)
+[![Travis-CI Build Status](https://travis-ci.org/stephlocke/mockaRoo.svg?branch=master)](https://travis-ci.org/stephlocke/mockaRoo) [![Coverage Status](https://img.shields.io/coveralls/stephlocke/mockaRoo.svg)](https://coveralls.io/r/stephlocke/mockaRoo?branch=master)
 
 Generate mock data with the [Mockaroo API](https://www.mockaroo.com/api/docs)
 
 ``` r
-if (!require(mockaRoo)) devtools::install_github("stephlocke/mockaRoo")
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("stephlocke/mockaRoo")
+```
+
+``` r
 library(mockaRoo)
 
 basicSchema <- data.frame(name = "blah", percentBlank = 0, type = "Color")
@@ -17,34 +21,34 @@ response <- mockaroo("json", list(key = "48b71860", count = 10), schema = jsonli
 jsonlite::prettify(response)
 #> [
 #>     {
-#>         "blah": "Red"
+#>         "blah": "Purple"
 #>     },
 #>     {
 #>         "blah": "Green"
 #>     },
 #>     {
-#>         "blah": "Goldenrod"
+#>         "blah": "Crimson"
 #>     },
 #>     {
-#>         "blah": "Blue"
+#>         "blah": "Mauv"
 #>     },
 #>     {
-#>         "blah": "Blue"
+#>         "blah": "Orange"
 #>     },
 #>     {
-#>         "blah": "Indigo"
+#>         "blah": "Aquamarine"
 #>     },
 #>     {
-#>         "blah": "Purple"
+#>         "blah": "Green"
 #>     },
 #>     {
-#>         "blah": "Turquoise"
+#>         "blah": "Aquamarine"
 #>     },
 #>     {
-#>         "blah": "Puce"
+#>         "blah": "Crimson"
 #>     },
 #>     {
-#>         "blah": "Turquoise"
+#>         "blah": "Orange"
 #>     }
 #> ]
 #> 
