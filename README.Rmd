@@ -30,8 +30,8 @@ name = "blah"
 )
 
 mockaroo("json"
-, list( key = "48b71860"
+ , list( key = "48b71860"
         , count = 10)
-, schema = jsonlite::toJSON(basicSchema)
+ , schema = jsonlite::toJSON(basicSchema)
 )
 ```

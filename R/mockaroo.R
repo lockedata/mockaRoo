@@ -36,5 +36,5 @@ mockaroo <- function(outputFormat
                     , query = queryArgs
                     , body = schema)
 
-  httr::content(res)
+  return(httr::content(res, as="text"))
 }
