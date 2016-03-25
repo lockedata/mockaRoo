@@ -6,6 +6,14 @@ mockaRoo
 
 Generate mock data with the [Mockaroo API](https://www.mockaroo.com/api/docs)
 
+Development
+-----------
+
+This package is in it's infancy - if you'd like mock data in R, give your feature requests and opinions in the [issue tracker](https://github.com/stephlocke/mockaRoo/issues).
+
+Usage
+-----
+
 ``` r
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("stephlocke/mockaRoo")
@@ -27,29 +35,33 @@ jsonlite::prettify(response)
 #>         "blah": "Green"
 #>     },
 #>     {
-#>         "blah": "Crimson"
+#>         "blah": "Orange"
 #>     },
 #>     {
 #>         "blah": "Mauv"
 #>     },
 #>     {
-#>         "blah": "Orange"
+#>         "blah": "Red"
 #>     },
 #>     {
-#>         "blah": "Aquamarine"
+#>         "blah": "Khaki"
 #>     },
 #>     {
-#>         "blah": "Green"
+#>         "blah": "Pink"
 #>     },
 #>     {
-#>         "blah": "Aquamarine"
+#>         "blah": "Blue"
 #>     },
 #>     {
-#>         "blah": "Crimson"
+#>         "blah": "Teal"
 #>     },
 #>     {
-#>         "blah": "Orange"
+#>         "blah": "Indigo"
 #>     }
 #> ]
 #> 
 ```
+
+------------------------------------------------------------------------
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
