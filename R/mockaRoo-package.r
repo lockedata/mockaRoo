@@ -6,4 +6,5 @@
 #' @name mockaRoo
 #' @docType package
 #' @importFrom httr POST content
+#' @importFrom jsonlite toJSON
 NULL

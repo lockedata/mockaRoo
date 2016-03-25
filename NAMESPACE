@@ -3,3 +3,4 @@
 export(mockaroo)
 importFrom(httr,POST)
 importFrom(httr,content)
+importFrom(jsonlite,toJSON)

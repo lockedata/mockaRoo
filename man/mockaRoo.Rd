@@ -17,7 +17,7 @@ mockaroo(outputFormat, queryArgs, schema)
 Mocked data
 }
 \description{
-By supplying a number of paramaters
+By supplying a number of parameters
 and a target schema, this function
 returns mock data.
 }

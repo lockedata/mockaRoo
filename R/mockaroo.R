@@ -1,6 +1,6 @@
 #' Generate data from mockaroo
 #'
-#' By supplying a number of paramaters
+#' By supplying a number of parameters
 #' and a target schema, this function
 #' returns mock data.
 #'
