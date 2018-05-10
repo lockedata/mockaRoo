@@ -2,6 +2,7 @@
 mockaRoo
 ========
 
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 [![Travis-CI Build Status](https://travis-ci.org/stephlocke/mockaRoo.svg?branch=master)](https://travis-ci.org/stephlocke/mockaRoo) [![Coverage Status](https://img.shields.io/coveralls/stephlocke/mockaRoo.svg)](https://coveralls.io/r/stephlocke/mockaRoo?branch=master)
 
 Generate mock data with the [Mockaroo API](https://www.mockaroo.com/api/docs)
